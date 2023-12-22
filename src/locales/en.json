@@ -1,0 +1,5 @@
+{
+  "title": "You did it!",
+  "description": "You’ve successfully created a project with i18n ",
+  "hello": "{msg} world"
+}

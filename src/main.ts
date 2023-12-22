@@ -1,15 +1,16 @@
-import { createApp } from "vue";
 import "./style.css";
+import "./utils/fontawesome";
+
+import { createApp } from "vue";
+import i18n from "@/utils/i18n";
+
+
 import App from "./App.vue";
 
-/* import the fontawesome core */
-import { library } from "@fortawesome/fontawesome-svg-core";
-/* import font awesome icon component */
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-/* import specific icons */
-import { faUserSecret, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-/* add icons to the library */
-library.add(faUserSecret, faSearch);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+const app = createApp(App);
+
+app.use(i18n);
+app.mount("#app");
+
