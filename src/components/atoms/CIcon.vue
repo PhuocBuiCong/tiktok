@@ -1,4 +1,4 @@
-<!-- Copyright 2022 Credit Engine, Inc. -->
+<!-- Copyright 202312 PhuocBC -->
 <script setup lang="ts">
 export interface Props {
   icon: string;

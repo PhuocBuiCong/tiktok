@@ -28,6 +28,17 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "@intlify/vue-i18n/no-raw-text": "off",
+    "@intlify/vue-i18n/no-v-html": "off",
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {},
+    },
+    "vue-i18n": {
+      localeDir: "src/locales/*.json",
+      messageSyntaxVersion: "^9.0.0",
+    },
   },
   plugins: ["simple-import-sort"],
 };
