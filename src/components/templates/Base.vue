@@ -12,6 +12,5 @@ import Header from "@/components/atoms/Header.vue";
     <main class="w-full max-w-screen-lg px-6 pb-16 lg:mx-auto mt-8 lg:mt-12">
       <slot />
     </main>
-    <Footer />
   </div>
 </template>

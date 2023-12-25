@@ -12,6 +12,10 @@ import {
   faTrashCan,
   faWallet,
   faSearch,
+  faPlus,
+  faGripDotsVertical,
+  faGlobe,
+  faMoon,
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faCalendarDays,
@@ -45,7 +49,11 @@ library.add(
   faImage,
   faFilePdf,
   faSpinner,
-  faSearch
+  faSearch,
+  faPlus,
+  faGripDotsVertical,
+  faGlobe,
+  faMoon
 );
 
 dom.watch();

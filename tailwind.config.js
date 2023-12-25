@@ -42,6 +42,7 @@ module.exports = {
         250: "#B3C7E1",
         275: "#99A2A5",
         300: "#777777",
+        350: "#1618231F",
         400: "#444444",
       },
       white: "#FFFFFF",
@@ -52,9 +53,14 @@ module.exports = {
       },
       red: {
         100: "#FFF4F5",
+        150: "#FE2C55",
         200: "#D31B30",
       },
+      transparent: "#00000000",
       positive: "#F3F9F6",
+      green: {
+        100: "#0BE09B",
+      },
     },
     screens: {
       sm: "576px",
