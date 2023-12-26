@@ -15,11 +15,33 @@ import { ref, watch } from "vue";
       <CIcon icon="bars" class="text-[24px]" />
       <img :src="LogoPC" alt="" class="w-28 h-10" />
     </div>
-    <div class="upper-content flex flex-row items-center">
-      <div class="flex">
-        <CIcon icon="house" class="text-black icon-home" />
-        <span>For You</span>
+    <div class="upper-content flex flex-col">
+      <div class="flex items-center px-3 py-2">
+        <CIcon icon="house" class="text-red-150 icon-home" />
+        <span class="ml-3 text-xl font-bold text-red-150">For You</span>
       </div>
+      <div class="flex items-center px-3 py-2">
+        <CIcon icon="user-group" class="text-black icon-home" />
+        <span class="ml-3 text-xl font-bold">Following</span>
+      </div>
+    </div>
+    <CButton
+      label="Log in"
+      class="text-white bg-red-150 mx-3 h-12 font-bold mt-4 mb-5"
+    />
+    <div class="flex flex-col p-3 border-t border-solid border-gray-200">
+      <span>Company</span>
+      <span>About</span>
+      <span>Newsroom</span>
+      <span>Contact</span>
+      <span>Careers</span>
+    </div>
+    <div class="flex flex-col p-3 border-t border-solid border-gray-200">
+      <span>Programs</span>
+      <span>Tiktok for Good</span>
+      <span>Tikt</span>
+      <span>Contact</span>
+      <span>Careers</span>
     </div>
   </div>
 </template>

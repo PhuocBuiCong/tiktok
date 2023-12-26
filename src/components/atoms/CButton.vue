@@ -15,6 +15,6 @@ const { icon, label } = defineProps<Props>();
       class="fa-light text-[20px] max-h-full max-w-full"
       :class="`fa-${icon}`"
     />
-    <span class="text-sm lg:text-[16px]">{{ label }}</span>
+    <span class="text-[16px]">{{ label }}</span>
   </div>
 </template>
