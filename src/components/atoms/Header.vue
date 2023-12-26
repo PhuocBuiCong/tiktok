@@ -10,8 +10,9 @@ let toggleActive = ref(false);
 </script>
 
 <template>
+  <!-- Header for PC -->
   <header
-    class="h-11 lg:h-16 sticky top-0 bg-white shadow-md z-20 print:static print:shadow-none px-6 flex items-center justify-between"
+    class="hidden lg:flex items-center justify-between h-16 sticky top-0 bg-white shadow-md z-20 print:static print:shadow-none px-6"
   >
     <!-- logo -->
     <div class="min-w-[300px]">
@@ -20,7 +21,7 @@ let toggleActive = ref(false);
 
     <!-- search -->
     <div
-      class="hidden lg:flex flex-row items-center rounded-[92px] h-[46px] border border-solid bg-gray-100 pl-3 max-w-[500px] w-full"
+      class="flex flex-row items-center rounded-[92px] h-[46px] border border-solid bg-gray-100 pl-3 max-w-[500px] w-full"
     >
       <input
         type="search"
@@ -83,6 +84,18 @@ let toggleActive = ref(false);
         </ul>
       </div>
     </div>
+  </header>
+
+  <!-- Header for SP -->
+  <header
+    class="absolute top-0 left-0 right-0 flex items-center justify-between bg-transparent w-full h-11 px-3 lg:hidden"
+  >
+    <CIcon icon="bars" class="text-[24px] text-white" />
+    <div>
+      <span class="text-white mr-5 font-bold">Following</span>
+      <span class="text-white font-bold">For You</span>
+    </div>
+    <CIcon icon="search" class="text-[24px] text-white" />
   </header>
 </template>
 <style lang="css" scoped>
