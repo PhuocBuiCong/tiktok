@@ -19,6 +19,9 @@ import {
   faBars,
   faHouse,
   faUserGroup,
+  faCompass,
+  faInbox,
+  faUser,
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faCalendarDays,
@@ -59,7 +62,10 @@ library.add(
   faMoon,
   faBars,
   faHouse,
-  faUserGroup
+  faUserGroup,
+  faCompass,
+  faInbox,
+  faUser
 );
 
 dom.watch();

@@ -50,5 +50,9 @@ watch(
     :required="true"
     rules="required"
   /> -->
-  <Base> test header </Base>
+  <Base>
+    <video controls class="w-full h-full">
+      <source src="./assets/video/vd1.mp4" type="video/mp4" />
+    </video>
+  </Base>
 </template>
